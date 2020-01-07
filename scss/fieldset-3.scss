@@ -1,0 +1,94 @@
+.fieldset-3 {
+  .card-types {
+    
+    .radio > input:checked {
+      position: relative;
+      width: 1.4rem;
+      height: 1.4rem;
+      -webkit-appearance: none;
+      border-radius: 50%;
+      border: 2px solid rebeccapurple;
+      &:before {
+        top: 0;
+        left: 0;
+        position: absolute;
+        content: '';
+        width: 1.2rem;
+        height: 1.2rem;
+        background-color: rebeccapurple;
+        clip-path: circle(20% at 50% 50%);
+        transform: translate(-7%, -7%);
+      }
+    }
+    .check {
+      padding: 0 5rem;
+    }
+    .toggle {
+      position: relative;
+      width: 4rem;
+      height: 2rem;
+      -webkit-appearance: none;
+      border-radius: 50px;
+      border: 2px solid #55c57a;;
+      &:before {
+        top: 0;
+        left: 0;
+        position: absolute;
+        content: '';
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: white;
+        border-radius: 50%;
+        border: 1px solid lightgray;
+      }
+    }
+    .toggle:checked {
+      position: relative;
+      background-color: #55c57a;
+      &:before {
+        transform: translateX(120%);
+        position: absolute;
+        content: '';
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: white;
+        border-radius: 50%;
+        border: 1px solid lightgray;
+      
+      }
+    }
+    label {
+      padding: 0 1rem;
+      vertical-align: top;
+      &:first-child {
+        padding: 0 2rem;
+      }
+    }
+  }
+  .cvv {
+    .inp {
+      &:first-child {
+      width: 85%;
+      }
+      &:last-child {
+        width: 10%;
+      }
+    }
+    
+  }
+  .expiration {
+    label {
+      padding-top: 1rem;
+      width: 38%;
+    }
+    select {
+      width: 34%;
+    }
+    .inp {
+      &:last-child {
+        width: 18%;
+      
+      }
+    }
+  }
+}

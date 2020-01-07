@@ -1,0 +1,192 @@
+.UI {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between; }
+  .UI:not(:last-child) {
+    margin-bottom: 3rem; }
+  .UI select {
+    -webkit-appearance: none;
+    background-position: calc(100% - 1.5rem) 50%;
+    background-repeat: no-repeat;
+    background-image: url("../img/up-and-down-arrows-triangles.png");
+    background-size: 1.2rem 1.2rem;
+    padding: 0.5rem 1.5rem;
+    height: 4rem; }
+
+.inp, textarea {
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  color: black;
+  font-family: Raleway-Bold;
+  padding: 0.8rem 1.5rem;
+  width: 100%;
+  height: 4rem;
+  background-color: white;
+  border: 1px solid lightgray; }
+
+::placeholder {
+  color: lightgray; }
+
+.fieldset-1 .UI div {
+  width: 48%;
+  position: relative; }
+  .fieldset-1 .UI div span {
+    position: absolute;
+    top: 0.5rem;
+    height: 3rem;
+    width: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    z-index: 100;
+    border-right: 1px solid lightgray; }
+  .fieldset-1 .UI div [class^="icon-"] {
+    color: lightgray; }
+  .fieldset-1 .UI div ::before {
+    top: -10%;
+    left: 34%;
+    position: absolute; }
+  .fieldset-1 .UI div input {
+    padding-left: 4.6rem;
+    height: 4rem; }
+
+.fieldset-2 .UI #SEL {
+  width: 34%;
+  color: black; }
+
+.fieldset-2 .UI .inp:nth-child(2) {
+  width: 26%; }
+
+.fieldset-2 .UI .inp:nth-child(3) {
+  width: 18%; }
+
+.fieldset-2 .adress textarea {
+  resize: none;
+  height: 10rem; }
+
+.fieldset-3 .card-types .radio > input:checked {
+  position: relative;
+  width: 1.4rem;
+  height: 1.4rem;
+  -webkit-appearance: none;
+  border-radius: 50%;
+  border: 2px solid rebeccapurple; }
+  .fieldset-3 .card-types .radio > input:checked:before {
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: '';
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: rebeccapurple;
+    clip-path: circle(20% at 50% 50%);
+    transform: translate(-7%, -7%); }
+
+.fieldset-3 .card-types .check {
+  padding: 0 5rem; }
+
+.fieldset-3 .card-types .toggle {
+  position: relative;
+  width: 4rem;
+  height: 2rem;
+  -webkit-appearance: none;
+  border-radius: 50px;
+  border: 2px solid #55c57a; }
+  .fieldset-3 .card-types .toggle:before {
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: '';
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid lightgray; }
+
+.fieldset-3 .card-types .toggle:checked {
+  position: relative;
+  background-color: #55c57a; }
+  .fieldset-3 .card-types .toggle:checked:before {
+    transform: translateX(120%);
+    position: absolute;
+    content: '';
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid lightgray; }
+
+.fieldset-3 .card-types label {
+  padding: 0 1rem;
+  vertical-align: top; }
+  .fieldset-3 .card-types label:first-child {
+    padding: 0 2rem; }
+
+.fieldset-3 .cvv .inp:first-child {
+  width: 85%; }
+
+.fieldset-3 .cvv .inp:last-child {
+  width: 10%; }
+
+.fieldset-3 .expiration label {
+  padding-top: 1rem;
+  width: 38%; }
+
+.fieldset-3 .expiration select {
+  width: 34%; }
+
+.fieldset-3 .expiration .inp:last-child {
+  width: 18%; }
+
+* {
+  border-radius: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-size: 1.5rem;
+  padding: 10rem;
+  background-image: linear-gradient(to bottom, #c5c1fc, #1f2152);
+  background-repeat: no-repeat; }
+
+form {
+  box-shadow: black 3px 3px 15px; }
+  form header {
+    padding: 3rem;
+    background-color: lightgray; }
+    form header h1 {
+      letter-spacing: 1px;
+      font-size: 3rem;
+      font-weight: 100; }
+  form fieldset {
+    padding: 3rem;
+    border-top: 2px groove aliceblue;
+    background-color: #ededed; }
+  form footer {
+    padding: 3rem;
+    background-color: lightgray;
+    border-top: 2px groove aliceblue;
+    display: flex;
+    justify-content: flex-end; }
+    form footer input {
+      background-color: rebeccapurple;
+      width: 10rem;
+      padding: 1rem;
+      color: white;
+      font-size: 1.5rem; }
+
+@font-face {
+  font-family: Raleway-Bold;
+  src: url("../fonts/raleway/Raleway-Bold.ttf"); }
+
+@font-face {
+  font-family: Raleway-Heavy;
+  src: url("../fonts/raleway/Raleway-Heavy.ttf"); }
+
+@font-face {
+  font-family: Raleway-Light;
+  src: url("../fonts/raleway/Raleway-Light.ttf"); }

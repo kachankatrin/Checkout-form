@@ -1,0 +1,20 @@
+.fieldset-2 {
+  .UI {
+    #SEL {
+      width: 34%;
+      color: black;
+    }
+    .inp:nth-child(2) {
+      width: 26%;
+    }
+    .inp:nth-child(3) {
+      width: 18%;
+    }
+  }
+  .adress {
+    textarea {
+      resize: none;
+      height: 10rem;
+    }
+  }
+}

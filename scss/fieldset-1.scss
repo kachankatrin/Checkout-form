@@ -1,0 +1,32 @@
+.fieldset-1 {
+  .UI { 
+    div {
+      width: 48%;
+      position: relative;
+      span {
+        position: absolute;
+        top: 0.5rem;
+        height: 3rem;
+        width: 4rem;
+        line-height: 4rem;
+        text-align: center;
+        // margin-right: -5rem;
+        z-index: 100;
+        border-right: 1px solid lightgray;
+        // color: lightgray;
+      }
+      [class^="icon-"] {
+        color: lightgray;
+      }
+      ::before {
+        top: -10%;
+        left: 34%;
+        position: absolute;
+      }
+      input {
+        padding-left: 4.6rem;
+        height: 4rem;
+      }
+    }
+  }
+}
